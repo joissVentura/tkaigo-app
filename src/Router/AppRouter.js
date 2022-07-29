@@ -4,6 +4,7 @@ import { EntretenimientoScreen } from '../Components/Entretenimiento/Entretenimi
 import { GastronomiaScreen } from '../Components/Gastronomia/GastronomiaScreen'
 import { HomeScreen } from '../Components/Home/HomeScreen'
 import { TurismoScreen } from '../Components/Turismo/TurismoScreen'
+import { EntretenimientoContent } from './../Components/Entretenimiento/EntretenimientoContent';
 
 
 export const AppRouter = () => {
@@ -13,6 +14,7 @@ export const AppRouter = () => {
                 <Route exact path="/turismo" element = {<TurismoScreen />}> </Route>
                 <Route exact path="/gastronomia" element ={<GastronomiaScreen />}></Route>
                 <Route exact path="/entretenimiento" element = {<EntretenimientoScreen />}></Route>
+                <Route exact path="/entretenimiento/:tipo" element = {<EntretenimientoContent />}> </Route>
                 <Route path='/' element = {<HomeScreen />}></Route>
             </Routes>
         </BrowserRouter>
