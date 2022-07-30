@@ -9,23 +9,20 @@ export const EntretenimientoData = {
         
     }
 }
-export const EntretenimientoCategorias =[
+export const EntretenimientoResultados =[
     {
-        ent_categoria_id:'1',
-        ent_categoria_titulo: 'cinema',
-        ent_categoria_img:'',
-        ent_categoria_background:''
+        id:'1',
+        nombre: 'RESULT 1',
+        dir_background:''
     },
     {
-        ent_categoria_id:'2',
-        ent_categoria_titulo: 'juegos',
-        ent_categoria_img:'',
-        ent_categoria_background:''
+        id:'2',
+        nombre: 'RESULT 2',
+        dir_background:''
     },
     {
-        ent_categoria_id:'3',
-        ent_categoria_titulo: 'museos',
-        ent_categoria_img:'',
-        ent_categoria_background:''
+        id:'3',
+        nombre: 'RESULT 3',
+        dir_background:''
     }
 ]

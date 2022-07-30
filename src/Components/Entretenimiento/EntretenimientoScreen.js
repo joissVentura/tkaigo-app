@@ -1,20 +1,19 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { EntretenimientoCategorias } from './../../data/EntretenimientoData';
+import { EntretenimientoResultados } from './../../data/EntretenimientoData';
 
 export const EntretenimientoScreen = () => {
-    const [categorias, setCategorias] = useState(EntretenimientoCategorias)
+    const [resultados, setResultados] = useState(EntretenimientoResultados)
     return (
         <>
             {
-                categorias.map((categoria) => {
+                resultados.map((result) => {
                     return (
                         <>
                             <Link className="Entretenimiento__Card__Menu" 
-                                to={`/entretenimiento/${categoria.ent_categoria_titulotitulo}`}>
-                                <p>{categoria.ent_categoria_titulo.toUpperCase()}: id {categoria.ent_categoria_id}</p>
-                                <img src={categoria.ent_categoria_img} alt={categoria.ent_categoria_titulo} />
-                                <img src={categoria.ent_categoria_background} alt={categoria.ent_categoria_titulo} />
+                                to={`/entretenimiento/${result.nombre}`}>
+                                <p>{result.nombre.toUpperCase()}: id {result.id}</p>
+                                <img src={result.dir_background} alt = "" />
                             </Link>
                         </>
                     )
