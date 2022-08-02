@@ -11,8 +11,8 @@
     padding-top: 5%;
 }
 
-/*section*/
-section {
+/*home_section*/
+.home_section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,13 +84,12 @@ section {
         display: none;
         visibility: hidden;
     }
-    section{
+    .home_section{
         height: 100vh;
     }
     #icon-section{
         display: block;
     }
-    body{
-        overflow: hidden;
-    }
+    
 }
+

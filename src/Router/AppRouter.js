@@ -10,11 +10,11 @@ import { EntretenimientoContent } from './../Components/Entretenimiento/Entreten
 export const AppRouter = () => {
     return (
         <BrowserRouter>
-            <header class="tk_header">
+            {/* <header class="tk_header">
                 <div class="text-center tk_header_logo">
                     <img src="img/logo/logo.svg" alt="" class="tk_logo" />
                 </div>
-            </header>
+            </header> */}
             <Routes>
                 <Route exact path="/turismo" element={<TurismoScreen />}> </Route>
                 <Route exact path="/gastronomia" element={<GastronomiaScreen />}></Route>

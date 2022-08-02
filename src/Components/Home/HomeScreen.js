@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import './HomeScreen.css';
 
 export const HomeScreen = () => {
     return (
-        <section>
+        <section className='home_section'>
             <div id="icon-section">
                 <div className="tk_header_logo">
                     <img src="img/logo/logo.svg" alt="" className="tk_logo" />
